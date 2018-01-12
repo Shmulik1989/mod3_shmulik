@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -9,7 +10,6 @@
     <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/nysl_logo.png">
     <title>NYSL Homepage</title>
-
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -19,27 +19,60 @@
     <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+</head>
 
-  </head>
-  <body>
+<body>
     <div id="header">
-      <h1>NYSL Home</h1>
-      <img id="logo" src="../images/nysl_logo.png" alt="NYSL Logo">
-      <h3 id="upcoming" class="text-center">Upcoming Matches</h3>
-      <hr>
+        <h1>NYSL Home</h1>
+        <a href="index.html"><img id="logo" src="../images/nysl_logo.png" alt="NYSL Logo"></a>
     </div>
-    <div class="container">
+    <div id="content">
+        <div>
+            <img id="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+            <h2 id="upcomingTitle" class="text-left">Upcoming Matches</h2>
+            <h4 class="text-center">8.1.18</h4>
+        </div>
+        <div class="text-center upcomingTeams">
+            U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16:00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
+        </div>
+        <div class="text-center upcomingTeams">
+            U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">18:00</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
+        </div>
+        <div class="text-center upcomingTeams">
+            U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">19:30</span><img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"> U6
+        </div>
+        <hr>
+        <div>
+            <img id="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+            <h2 id="previousTitle" class="text-left">Previous Matches</h2>
+            <h4 class="text-center">1.1.18</h4>
+        </div>
+        <div class="text-center previousTeams">
+            U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">2-1</span><img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"> U1
+        </div>
+        <div class="text-center previousTeams">
+            U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">3-2</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
+        </div>
+        <div class="text-center previousTeams">
+            U6 <img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"><span class="hour">1-0</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
+        </div>
+        <hr>
+        <div>
+            <img id="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+            <h2 class="text-left">League Table</h2>
+            
+        </div>
     </div>
     <nav>
         <ul>
-            <li><a href=""><span class="fas fa-home"></span> </span>Home</a></li>
-            <li><a href=""><span class="fas fa-newspaper"></span> News</a></li>
-            <li><a href="">More <span class="fas fa-ellipsis-v"></span></a></li>
+            <li><a href=""><span class="fas fa-home"></span></a></li>
+            <li><a href=""><span class="fas fa-newspaper"></span></a></li>
+            <li><a href=""><span class="fas fa-ellipsis-v"></span></a></li>
         </ul>
     </nav>
-    </div>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  </body>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
