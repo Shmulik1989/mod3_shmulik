@@ -4,42 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/nysl_logo.png">
     <title>NYSL Homepage</title>
-    <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/4.8.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-database.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-messaging.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="/__/firebase/init.js"></script> -->
 </head>
 
 <body>
-    <div id="header">
+    <div class="header">
         <h1>NYSL Home</h1>
-        <a href="index.html"><img id="logo" src="../images/nysl_logo.png" alt="NYSL Logo"></a>
+        <a href="index.html"><img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo"></a>
     </div>
-    <div id="content">
+    <section id="homePage">
         <div>
             <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
             <h2 id="upcomingTitle" class="text-left">Upcoming Matches</h2>
             <h4 class="text-center">8.1.18</h4>
         </div>
+    <hr>
         <div class="text-center upcomingTeams">
-           U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16:00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2<span class="fas fa-angle-right arrow"></span>
+           <p>U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16 : 00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2<br><a href="https://www.google.de/maps/place/24+W+Walton+St,+Chicago,+IL+60610,+USA/@41.9002407,-87.6312604,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd34e07f6bac3:0x68a82e5d59952c86!8m2!3d41.9002367!4d-87.6290717?hl=en" class="locations">AJ Katzenmaier<span class="fas fa-map-marker"></span></a></p>                                                                                   
         </div>
         <div class="text-center upcomingTeams">
-           U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">18:00</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4<span class="fas fa-angle-right arrow"></span>
+           <p>U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">18 : 00</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4<br><a href="https://www.google.de/maps/place/2245+N+Southport+Ave,+Chicago,+IL+60614,+USA/@41.9232686,-87.6651146,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd2e37f9b8d2d:0x62ad8b907dd755d6!8m2!3d41.9232646!4d-87.6629259?hl=en" class="locations">Hoawrd A Yeager<span class="fas fa-map-marker"></span></a></p>
         </div>
         <div class="text-center upcomingTeams">
-           U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">19:30</span><img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"> U6<span class="fas fa-angle-right arrow"></span>
+          <p>U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">19 : 30</span><img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"> U6<br><a href="https://www.google.de/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+USA/@41.90713,-87.6483584,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd33af13a8945:0xb6ad1ec2b6f379ba!8m2!3d41.907126!4d-87.6461697?hl=en" class="locations">North Elementry<span class="fas fa-map-marker"></span></a></p>
         <hr>
         <div>
             <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
@@ -47,13 +47,13 @@
             <h4 class="text-center">1.1.18</h4>
         </div>
         <div class="text-center previousTeams">
-            U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">2-1</span><img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"> U1<span class="fas fa-angle-right arrow"></span>
+            U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">2 - 1</span><img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"> U1
         </div>
         <div class="text-center previousTeams">
-            U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">3-2</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2<span class="fas fa-angle-right arrow"></span>
+            U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">3 - 2</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
         </div>
         <div class="text-center previousTeams">
-            U6 <img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"><span class="hour">1-0</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4<span class="fas fa-angle-right arrow"></span>
+            U6 <img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"><span class="hour">1 - 0</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
         </div>
         <hr>
         <div>
@@ -76,13 +76,25 @@
             </table>
             </div>
         </div>
-    </div>    
-    </div>
+    </div> 
+  </section>
+    <section id="events">
+        <div class="header">
+            <h1>NYSL Events</h1>
+            <img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo">
+        </div>
+    </section>
+    <section id="more">
+        <div class="header">
+            <h1>NYSL More</h1>
+            <img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo">
+        </div>
+    </section>
     <nav>
         <ul>
-            <li><a href=""><span class="fas fa-home"></span></a></li>
-            <li><a href=""><span class="fas fa-newspaper"></span></a></li>
-            <li><a href=""><span class="fas fa-ellipsis-v"></span></a></li>
+            <li data-name="homePage"><span class="fas fa-home"></span></li>
+            <li data-name="events"><span class="fas fa-newspaper"></span></li>
+            <li data-name="more"><span class="fas fa-ellipsis-v"></span></li>
         </ul>
     </nav>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

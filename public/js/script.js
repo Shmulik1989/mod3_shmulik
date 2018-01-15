@@ -1,5 +1,14 @@
 function DataHandler(){ //create the single source of truth
     
+    // Navigation
+    this.Nav = function(){
+        $('nav ul li').on('click', function(){
+            $('section').hide();
+            var name = $(this).data('name');
+            $('#'+name).show();
+        });
+    };
+
     this.teams = "";
     //get the data from the JSON file
     this.getData = function(){
@@ -34,4 +43,5 @@ this.createTable = function() {
 //initialize DataHandler
 var dataHandler = new DataHandler();
 dataHandler.getData();
+dataHandler.Nav();
 

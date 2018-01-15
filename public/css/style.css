@@ -1,24 +1,30 @@
 body {
   color: white;
   margin: 0;
-  padding-top: 0em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   background: url(../images/bgimage.png);
   background-size: cover;
   font-family: lato; }
 
-#header {
+.header {
+  line-height: 4em;
+  top: 0;
   position: fixed;
   width: 100%;
   height: 4em;
   background: black; }
 
 h1 {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 1.6em;
-  margin-top: 0.6em;
+  margin-top: 0;
   text-align: center;
   color: green; }
 
-#logo {
+.logo {
   width: 3em;
   position: fixed;
   top: 0;
@@ -49,7 +55,7 @@ nav ul li a {
   padding: 0;
   color: white; }
 
-nav ul li a:hover {
+nav ul li :hover {
   color: green;
   text-decoration: none; }
 
@@ -88,8 +94,11 @@ p {
 .far {
   color: black; }
 
-#content {
-  padding: 70px 0px; }
+section #events {
+  padding: 0px 0px; }
+
+#homePage {
+  padding-bottom: 0px; }
 
 .teamsLogo {
   width: 1.4em; }
@@ -97,3 +106,26 @@ p {
 .arrow {
   width: 1.2em;
   margin-left: 1em; }
+
+div p a:hover {
+  text-decoration: none;
+  color: grey; }
+
+div p a {
+  text-decoration: none;
+  color: white; }
+
+.fa-map-marker {
+  color: red;
+  margin-left: 0.5em; }
+
+a.locations {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 43%;
+  position: relative; }
+
+a.locations span.fas {
+  position: absolute;
+  right: 0; }
