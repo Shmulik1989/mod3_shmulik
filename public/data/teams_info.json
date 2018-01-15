@@ -1,9 +1,76 @@
 { 
+    "stadiums" :
+    {
+        "AJ Katzenmaier" : {
+            "address" : "24 W Walton St, Chicago, IL 60610",
+            "capacity": "5000"
+            
+        },
+        "Greenbay" : {
+            "address" : "1734 N Orleans St, Chicago, IL 60614",
+            "capacity": "7000"
+        }
+        ,
+        "Howard A Yeager" : {
+            "address" : "2245 N Southport Ave, Chicago, IL 60614",
+            "capacity": "3000"
+        },
+
+        "Marjorie P Hart" : {
+            "address" : "2625 N Orchard St, Chicago, IL 60614",
+            "capacity": "8000"
+        },
+        
+        "North" : {
+        "address" : "1409 N Ogden Ave, Chicago, IL 60610",
+        "capacity": "6000"
+        },
+
+        "South" : {
+        "address" : "2101 N Fremont St, Chicago, IL 60614",
+        "capacity" : "10000"
+        
+        }
+        
+
+    },
+    
+    "matches" : [
+        {
+            "date" : "8.1.18",
+            "location": "AJ Katzenmaier",
+            "hour": "16:00",
+            "home_team": "U1",
+            "away_team" : "U2"
+
+        },
+
+        {
+            "date" : "1.8.18",
+            "location": "Howard A Yeager",
+            "hour": "18:00",
+            "home_team": "U3",
+            "away_team" : "U4"
+        }
+        ,
+        
+        {
+            "date" : "1.8.18",
+            "location": "North",
+            "hour": "19:30",
+            "home_team": "U5",
+            "away_team" : "U6"
+        }
+
+    ],
+
+    
+
     "teams" : [
         {
             "name" : "U1",
             "position" : "1",
-            "goals_score" : "24",
+            "goals_scored" : "24",
             "goals_taken" : "8",
             "years_in_league" : "5",
             "home_stadium" : "AJ Katzenmaier",
@@ -12,13 +79,13 @@
             "ties" : "1",
             "games_played": "12",
             "points" : "25",
-            "coach" : "Steven Spielberg"
+            "coach" : "Steven Spielberg"    
         },
 
         {
             "name" : "U2",
             "position" : "2",
-            "goals_score" : "22",
+            "goals_scored" : "22",
             "goals_taken" : "10",
             "years_in_league" : "3",
             "home_stadium" : "Greenbay",
@@ -33,7 +100,7 @@
         {
             "name" : "U3",
             "position" : "3",
-            "goals_score" : "20",
+            "goals_scored" : "20",
             "goals_taken" : "12",
             "years_in_league" : "9",
             "home_stadium" : "Howard A Yeager",
@@ -48,7 +115,7 @@
         {
             "name" : "U4",
             "position" : "4",
-            "goals_score" : "18",
+            "goals_scored" : "18",
             "goals_taken" : "14",
             "years_in_league" : "7",
             "home_stadium" : "Marjorie P Hart",
@@ -64,7 +131,7 @@
         {
             "name" : "U5",
             "position" : "5",
-            "goals_score" : "16",
+            "goals_scored" : "16",
             "goals_taken" : "16",
             "years_in_league" : "8",
             "home_stadium" : "North",
@@ -80,7 +147,7 @@
         {
             "name" : "U6",
             "position" : "6",
-            "goals_score" : "16",
+            "goals_scored" : "16",
             "goals_taken" : "16",
             "years_in_league" : "11",
             "home_stadium" : "South",

@@ -60,21 +60,12 @@ h1 a:hover {
 h3 {
   color: white; }
 
-#upcomingTitle {
+#upcomingTitle, #previousTitle, #leagueTableTitle {
   margin-top: 0.5em;
   margin-left: 2em; }
 
-#previousTitle {
-  margin-top: 0.5em;
-  margin-left: 2em; }
-
-.upcomingTeams {
-  margin-top: 1em;
-  font-size: 1.2em; }
-
-.previousTeams {
-  margin-top: 1em;
-  font-size: 1.2em; }
+.upcomingTeams, .previousTeams {
+  margin-top: 1em; }
 
 hr {
   border: 0;
@@ -82,7 +73,7 @@ hr {
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc); }
 
-#logo2 {
+.logo2 {
   width: 2.4em;
   margin-left: 1em;
   float: left; }
@@ -102,3 +93,7 @@ p {
 
 .teamsLogo {
   width: 1.4em; }
+
+.arrow {
+  width: 1.2em;
+  margin-left: 1em; }
