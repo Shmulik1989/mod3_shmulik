@@ -1,26 +1,27 @@
 function DataHandler(){ //create the single source of truth
     
-    // Navigation
-    this.Nav = function(){
-        $('nav ul li').on('click', function(){
-            $('section').hide();
-            var name = $(this).data('name');
-            $('#'+name).show();
-        });
-    };
+    var that = this;
+    var teams;
 
-    this.teams = "";
-    //get the data from the JSON file
-    this.getData = function(){
-        var that = this;
-        $.getJSON("data/teams_info.json", function(response){
+    // Navigation
+    $('nav ul .openPage, #continue').on('click', function(){
+        $("section").hide( "slide", { direction: "down"  }, 1000 );
+        var name = $(this).data('name');
+        $("#"+name).show( "fold", {horizFirst: true}, 1000 );
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+
+    });
+
+    $('#continue').on('click', function(){
+        $('nav').fadeIn(800);
+        $("[data-name='homepage']").addClass('active');
+     })
+
+    $.getJSON("data/teams_info.json", function(response){
             that.teams = response;
-            that.createTable();
-            
+            that.createTable();   
         })
-    }
-    //write teams data into the table
-    //Appending league stats to table.
 
 this.createTable = function() {
     var rowArray = [];
@@ -36,12 +37,10 @@ this.createTable = function() {
         rowArray.push(row);
     });
     $('#leagueTable').append(rowArray);
-}; 
+};
     
 
 }
 //initialize DataHandler
 var dataHandler = new DataHandler();
-dataHandler.getData();
-dataHandler.Nav();
 

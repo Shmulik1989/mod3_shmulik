@@ -5,101 +5,151 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../images/nysl_logo.png">
-    <title>NYSL Homepage</title>
+    <link rel="icon" type="image/png" href="images/nysl_logo.png">
+    <title>NYSL</title>
     <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
+    <!--include only the Firebase features as you need  -->
     <script defer src="/__/firebase/4.8.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-database.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-messaging.js"></script>
     <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/init.js"></script> -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <h1>NYSL Home</h1>
-        <a href="index.html"><img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo"></a>
-    </div>
-    <section id="homePage">
-        <div>
-            <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-            <h2 id="upcomingTitle" class="text-left">Upcoming Matches</h2>
-            <h4 class="text-center">8.1.18</h4>
-        </div>
-    <hr>
-        <div class="text-center upcomingTeams">
-           <p>U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16 : 00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2<br><a href="https://www.google.de/maps/place/24+W+Walton+St,+Chicago,+IL+60610,+USA/@41.9002407,-87.6312604,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd34e07f6bac3:0x68a82e5d59952c86!8m2!3d41.9002367!4d-87.6290717?hl=en" class="locations">AJ Katzenmaier<span class="fas fa-map-marker"></span></a></p>                                                                                   
-        </div>
-        <div class="text-center upcomingTeams">
-           <p>U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">18 : 00</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4<br><a href="https://www.google.de/maps/place/2245+N+Southport+Ave,+Chicago,+IL+60614,+USA/@41.9232686,-87.6651146,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd2e37f9b8d2d:0x62ad8b907dd755d6!8m2!3d41.9232646!4d-87.6629259?hl=en" class="locations">Hoawrd A Yeager<span class="fas fa-map-marker"></span></a></p>
-        </div>
-        <div class="text-center upcomingTeams">
-          <p>U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">19 : 30</span><img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"> U6<br><a href="https://www.google.de/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+USA/@41.90713,-87.6483584,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd33af13a8945:0xb6ad1ec2b6f379ba!8m2!3d41.907126!4d-87.6461697?hl=en" class="locations">North Elementry<span class="fas fa-map-marker"></span></a></p>
-        <hr>
-        <div>
-            <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-            <h2 id="previousTitle" class="text-left">Previous Matches</h2>
-            <h4 class="text-center">1.1.18</h4>
-        </div>
-        <div class="text-center previousTeams">
-            U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">2 - 1</span><img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"> U1
-        </div>
-        <div class="text-center previousTeams">
-            U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">3 - 2</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
-        </div>
-        <div class="text-center previousTeams">
-            U6 <img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"><span class="hour">1 - 0</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
-        </div>
-        <hr>
-        <div>
-            <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-            <h2 id="leagueTableTitle" class="text-left">League Table</h2>
-            <div class="container">
-            <table class="table table-hover">
-                <thead>
-                    
-                        <th>POS</th>
-                        <th>Club</th>
-                        <th>Goals</th>
-                        <th>W</th>
-                        <th>L</th>
-                        <th>T</th>
-                        <th>P</th>
-                    
-                </thead>
-                <tbody id="leagueTable"></tbody>
-            </table>
+    <section id="landingPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-5 col-xs-3">
+                    <div class="form-login">
+                        <h4 id="welcome">Welcome to NYSL</h4>
+                        <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                        </br>
+                        <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                        </br>
+                        <div class="wrapper">
+                            <span class="group-btn">     
+                                <a href="#" id="login" class="btn btn-primary btn-md">Login <i class="fa fa-sign-in"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> 
-  </section>
-    <section id="events">
-        <div class="header">
-            <h1>NYSL Events</h1>
-            <img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo">
+        <div id="register">Not a member? Sign-up Here!</div>
+        <div id="continue" data-name="homepage">Continue Without Log in</div>
+        <img id="landingLogo" src="../images/nysl_logo.png" alt="NYSL Logo">
+    </section>
+    <section id="homepage">
+        <div>
+            <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+            <h2 class="text-left title">Upcoming Matches</h2>
+            <h4 class="text-center">8.1.18</h4>
+        </div>
+        <hr>
+        <div class="text-center upcomingTeams">
+                <p>U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16 : 00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
+                <br><a href="https://www.google.de/maps/place/24+W+Walton+St,+Chicago,+IL+60610,+USA/@41.9002407,-87.6312604,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd34e07f6bac3:0x68a82e5d59952c86!8m2!3d41.9002367!4d-87.6290717?hl=en" class="locations">AJ Katzenmaier<span class="fas fa-map-marker"></span></a></p>
+        </div>
+        <div class="text-center upcomingTeams">
+            <p>U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">18 : 00</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
+                <br><a href="https://www.google.de/maps/place/2245+N+Southport+Ave,+Chicago,+IL+60614,+USA/@41.9232686,-87.6651146,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd2e37f9b8d2d:0x62ad8b907dd755d6!8m2!3d41.9232646!4d-87.6629259?hl=en" class="locations">Hoawrd A Yeager<span class="fas fa-map-marker"></span></a></p>
+        </div>
+        <div class="text-center upcomingTeams">
+            <p>U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">19 : 30</span><img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"> U6
+                <br><a href="https://www.google.de/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+USA/@41.90713,-87.6483584,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd33af13a8945:0xb6ad1ec2b6f379ba!8m2!3d41.907126!4d-87.6461697?hl=en" class="locations">North Elementry<span class="fas fa-map-marker"></span></a></p>
+            <hr>
+            <div>
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">Previous Matches</h2>
+                <h4 class="text-center">1.1.18</h4>
+            </div>
+            <div class="text-center previousTeams">
+                U5 <img class="teamsLogo" src="images/fake5.jpeg" alt="Team U5 Logo"><span class="hour">2 - 1</span><img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"> U1
+            </div>
+            <div class="text-center previousTeams">
+                U3 <img class="teamsLogo" src="images/fake3.jpeg" alt="Team U3 Logo"><span class="hour">3 - 2</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
+            </div>
+            <div class="text-center previousTeams">
+                U6 <img class="teamsLogo" src="images/fake6.jpeg" alt="Team U6 Logo"><span class="hour">1 - 0</span><img class="teamsLogo" src="images/fake4.jpeg" alt="Team U4 Logo"> U4
+            </div>
+            <hr>
+            <div>
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">League Table</h2>
+                <div class="container">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>POS</th>
+                            <th>Club</th>
+                            <th>Goals</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>T</th>
+                            <th>P</th>
+                        </thead>
+                        <tbody id="leagueTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="text-center">All Rights Reserved to NYSL <span class="far fa-copyright"> 2018</span></footer>
         </div>
     </section>
-    <section id="more">
-        <div class="header">
-            <h1>NYSL More</h1>
-            <img class="logo" src="../images/nysl_logo.png" alt="NYSL Logo">
+    <section id="events">
+        <main>
+            <div class="container events">
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">Upcoming Events</h2>
+                <h3>August 4:</h3>
+                <ul>
+                    <li>NYSL fundraiser</li>
+                </ul>
+                <h3>August 16:</h3>
+                <ul>
+                    <li>Season Kick-Off: Meet the teams</li>
+                </ul>
+                <h3>September 1:</h3>
+                <ul>
+                    <li>First game of the season (Check game schedule for details)</li>
+                </ul>
+                <hr>
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">Our Mission</h2>
+                <p>To support young athletes living in chicago's northside neighborhoods,who have an interest in learning and playing soccer,with opportunities to learn and practice skills related to the game of soccer,specifically those skills around team cooperation and sportsmanship.</p>
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">Our Vision</h2>
+                <p>The northside youth soccer league aspires to develop strong,well-minded and mindfull athletes through the building of character,self-dicipline and leadership.</p>
+                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
+                <h2 class="text-left title">General Info</h2>
+                <p>The northside youth soccer league was established in 1996 to provide athletes residing in chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL you need to be between the ages of 4-12 and reside in a chicago northside neighborhoods.NYSL is run by a small full-time staff and relies on the generous volunteer time of parents and previous league members.</p>
+                <hr>
+            </div>
+        </main>
+        <div class="container">
+            <footer class="text-center">All Rights Reserved to NYSL <span class="far fa-copyright"> 2018</span></footer>
         </div>
     </section>
     <nav>
         <ul>
-            <li data-name="homePage"><span class="fas fa-home"></span></li>
-            <li data-name="events"><span class="fas fa-newspaper"></span></li>
-            <li data-name="more"><span class="fas fa-ellipsis-v"></span></li>
+            <li class="openPage" data-name="homepage"><span class="fas fa-home"></span></li>
+            <li class="openPage" data-name="events"><span class="fas fa-newspaper"></span></li>
+            <li class="openPage" data-name="more"><span class="fas fa-ellipsis-v"></span></li>
         </ul>
     </nav>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    
 </body>
 
 </html>
