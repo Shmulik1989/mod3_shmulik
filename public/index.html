@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/nysl_logo.png">
+    <link rel="stylesheet" href="manifest.json">
     <title>NYSL</title>
     <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
     <!--include only the Firebase features as you need  -->
@@ -31,9 +32,9 @@
                     <div class="form-login">
                         <h4 id="welcome">Welcome to NYSL</h4>
                         <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
-                        </br>
+                        <br>
                         <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
-                        </br>
+                        <br>
                         <div class="wrapper">
                             <span class="group-btn">     
                                 <a href="#" id="login" class="btn btn-primary btn-md">Login <i class="fa fa-sign-in"></i></a>
@@ -42,20 +43,19 @@
                     </div>
                 </div>
             </div>
+            <div id="register">Not a member? Sign-up Here!</div>
+            <div id="continue" data-name="homepage">Continue Without Log in</div>
+            <img id="landingLogo" src="../images/nysl_logo.png" alt="NYSL Logo">    
         </div>
-        <div id="register">Not a member? Sign-up Here!</div>
-        <div id="continue" data-name="homepage">Continue Without Log in</div>
-        <img id="landingLogo" src="../images/nysl_logo.png" alt="NYSL Logo">
     </section>
     <section id="homepage">
         <div>
-            <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-            <h2 class="text-left title">Upcoming Matches</h2>
+            <h3 class="text-center title">Upcoming Games</h3>
             <h4 class="text-center">8.1.18</h4>
         </div>
         <hr>
         <div class="text-center upcomingTeams">
-                <p>U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16 : 00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
+            <p>U1 <img class="teamsLogo" src="images/fake1.jpeg" alt="Team U1 Logo"><span class="hour">16 : 00</span><img class="teamsLogo" src="images/fake2.jpeg" alt="Team U2 Logo"> U2
                 <br><a href="https://www.google.de/maps/place/24+W+Walton+St,+Chicago,+IL+60610,+USA/@41.9002407,-87.6312604,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd34e07f6bac3:0x68a82e5d59952c86!8m2!3d41.9002367!4d-87.6290717?hl=en" class="locations">AJ Katzenmaier<span class="fas fa-map-marker"></span></a></p>
         </div>
         <div class="text-center upcomingTeams">
@@ -67,8 +67,7 @@
                 <br><a href="https://www.google.de/maps/place/1409+N+Ogden+Ave,+Chicago,+IL+60610,+USA/@41.90713,-87.6483584,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd33af13a8945:0xb6ad1ec2b6f379ba!8m2!3d41.907126!4d-87.6461697?hl=en" class="locations">North Elementry<span class="fas fa-map-marker"></span></a></p>
             <hr>
             <div>
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">Previous Matches</h2>
+                <h3 class="text-center title">Previous Games</h3>
                 <h4 class="text-center">1.1.18</h4>
             </div>
             <div class="text-center previousTeams">
@@ -82,8 +81,7 @@
             </div>
             <hr>
             <div>
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">League Table</h2>
+                <h3 class="text-center title">League Table</h3>
                 <div class="container">
                     <table class="table table-hover">
                         <thead>
@@ -100,56 +98,126 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <footer class="text-center">All Rights Reserved to NYSL <span class="far fa-copyright"> 2018</span></footer>
-        </div>
     </section>
     <section id="events">
         <main>
             <div class="container events">
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">Upcoming Events</h2>
-                <h3>August 4:</h3>
+                <h3 class="text-center title">Events & Info</h3>
+                <h4>August 4:</h4>
                 <ul>
                     <li>NYSL fundraiser</li>
                 </ul>
-                <h3>August 16:</h3>
+                <h4>August 16:</h4>
                 <ul>
                     <li>Season Kick-Off: Meet the teams</li>
                 </ul>
-                <h3>September 1:</h3>
+                <h4>September 1:</h4>
                 <ul>
                     <li>First game of the season (Check game schedule for details)</li>
                 </ul>
                 <hr>
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">Our Mission</h2>
+                <h3 class="text-center title">Our Mission</h3>
                 <p>To support young athletes living in chicago's northside neighborhoods,who have an interest in learning and playing soccer,with opportunities to learn and practice skills related to the game of soccer,specifically those skills around team cooperation and sportsmanship.</p>
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">Our Vision</h2>
+                <h3 class="text-center title">Our Vision</h3>
                 <p>The northside youth soccer league aspires to develop strong,well-minded and mindfull athletes through the building of character,self-dicipline and leadership.</p>
-                <img class="logo2" src="../images/nysl_logo.png" alt="NYSL Logo">
-                <h2 class="text-left title">General Info</h2>
+                <h3 class="text-center title">General Info</h3>
                 <p>The northside youth soccer league was established in 1996 to provide athletes residing in chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL you need to be between the ages of 4-12 and reside in a chicago northside neighborhoods.NYSL is run by a small full-time staff and relies on the generous volunteer time of parents and previous league members.</p>
-                <hr>
             </div>
         </main>
-        <div class="container">
-            <footer class="text-center">All Rights Reserved to NYSL <span class="far fa-copyright"> 2018</span></footer>
+    </section>
+    <section id="contact"> 
+        <h3 class="text-center title">Contact NYSL</h3>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-offset-4 col-xs-4" id="box">
+                    <form class="form-horizontal" action=" " method="" id="contact_form">
+                        <fieldset>
+                            <!-- Form Name -->
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="first_name" placeholder="Name" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                        <input name="phone" placeholder="(005)501-120101" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="col-xs-12 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                        <textarea class="form-control" name="comment" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <button type="submit" class="btn btn-warning">Send <span class="fab fa-telegram"></span></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
-    <nav>
+    <nav id="lowerNav">
         <ul>
             <li class="openPage" data-name="homepage"><span class="fas fa-home"></span></li>
             <li class="openPage" data-name="events"><span class="fas fa-newspaper"></span></li>
-            <li class="openPage" data-name="more"><span class="fas fa-ellipsis-v"></span></li>
+            <li class="openPage" data-name="contact"><span class="fas fa-envelope"></span></li>
+        </ul>
+    </nav>
+    <nav id="upperNav" class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
+        <div class="navbar-toggler animate">
+            <span class="menu-icon"></span>
+        </div>
+        <ul class="navbar-menu animate">
+            <li>
+                <a class="animate">
+                    <span class="desc animate">FIFA Rules&Conditions</span>
+                </a>
+            </li>
+            <li>
+                <a class="animate">
+                    <span class="desc animate">Messege Board</span>   
+                </a>
+            </li>
+            <li>
+                <a class="animate">
+                    <span class="desc animate">Our Stadiums</span> 
+                </a>
+            </li>
+            <li>
+                <a class="animate">
+                    <span class="desc animate">Teams Information</span> 
+                </a>
+            </li>
         </ul>
     </nav>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 </body>
 
 </html>

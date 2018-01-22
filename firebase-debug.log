@@ -1,0 +1,244 @@
+[debug] [2018-01-22T09:07:53.910Z] ----------------------------------------------------------------------
+[debug] [2018-01-22T09:07:53.912Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase serve
+[debug] [2018-01-22T09:07:53.912Z] CLI Version:   3.16.0
+[debug] [2018-01-22T09:07:53.912Z] Platform:      darwin
+[debug] [2018-01-22T09:07:53.912Z] Node Version:  v8.9.1
+[debug] [2018-01-22T09:07:53.913Z] Time:          Mon Jan 22 2018 10:07:53 GMT+0100 (CET)
+[debug] [2018-01-22T09:07:53.913Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-22T09:07:53.926Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-22T09:07:53.927Z] > authorizing via signed-in user
+[debug] [2018-01-22T09:07:53.928Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-22T09:07:53.928Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/UdYFVbFtbXHvqbL29-jFuWj7iJEtdUvwiAGq__mN5r8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jan 22 2018 10:07:53 GMT+0100 (CET)
+[debug] [2018-01-22T09:07:54.935Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:07:54.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:07:54 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:10.724Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:10.725Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-shmulik/tokens  
+  
+ Mon Jan 22 2018 10:08:10 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:11.387Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/retina/Sites/ubiqum/mod3_shmulik'...
+[info] 
+[debug] [2018-01-22T09:08:11.390Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:11 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:21.970Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:21.973Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:21 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:33.518Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-01-22T09:08:33.541Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:33 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:34.478Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:34.478Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:34 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:35.044Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5004 is not available. Trying another port...
+[debug] [2018-01-22T09:08:35.047Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:35 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:35.946Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:35.947Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:35 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:36.525Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5008 is not available. Trying another port...
+[debug] [2018-01-22T09:08:36.527Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:36 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:37.330Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:37.330Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:37 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:38.397Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5012 is not available. Trying another port...
+[debug] [2018-01-22T09:08:38.402Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:38 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:39.262Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:39.263Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:39 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:39.797Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5016 is not available. Trying another port...
+[debug] [2018-01-22T09:08:39.800Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:39 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:40.615Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:40.615Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:40 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:41.085Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5020 is not available. Trying another port...
+[debug] [2018-01-22T09:08:41.087Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:41 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:42.057Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:42.058Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:42 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:42.754Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5024 is not available. Trying another port...
+[debug] [2018-01-22T09:08:42.756Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:42 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:43.651Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:43.651Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:43 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:44.576Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5028 is not available. Trying another port...
+[debug] [2018-01-22T09:08:44.578Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:44 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:45.718Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:45.719Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:45 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:46.233Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5032 is not available. Trying another port...
+[debug] [2018-01-22T09:08:46.235Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:08:46 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:47.073Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:08:47.074Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:08:47 GMT+0100 (CET)
+[debug] [2018-01-22T09:08:48.916Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5036
+
+[debug] [2018-01-22T09:37:03.335Z] ----------------------------------------------------------------------
+[debug] [2018-01-22T09:37:03.338Z] Command:       /usr/local/Cellar/node/8.9.1/bin/node /usr/local/bin/firebase serve
+[debug] [2018-01-22T09:37:03.338Z] CLI Version:   3.16.0
+[debug] [2018-01-22T09:37:03.338Z] Platform:      darwin
+[debug] [2018-01-22T09:37:03.338Z] Node Version:  v8.9.1
+[debug] [2018-01-22T09:37:03.338Z] Time:          Mon Jan 22 2018 10:37:03 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:03.339Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-22T09:37:03.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-22T09:37:03.349Z] > authorizing via signed-in user
+[debug] [2018-01-22T09:37:03.351Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:03 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:04.304Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:04.306Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-shmulik/tokens  
+  
+ Mon Jan 22 2018 10:37:04 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:05.283Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/retina/Sites/ubiqum/mod3_shmulik'...
+[info] 
+[debug] [2018-01-22T09:37:05.287Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:05 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:06.659Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:06.662Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:06 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:07.606Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2018-01-22T09:37:07.631Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:07 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:08.506Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:08.507Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:08 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:09.419Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5004 is not available. Trying another port...
+[debug] [2018-01-22T09:37:09.426Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:09 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:10.226Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:10.226Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:10 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:11.079Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5008 is not available. Trying another port...
+[debug] [2018-01-22T09:37:11.082Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:11 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:11.905Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:11.906Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:11 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:12.444Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5012 is not available. Trying another port...
+[debug] [2018-01-22T09:37:12.447Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:12 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:13.308Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:13.308Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:13 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:14.661Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5016 is not available. Trying another port...
+[debug] [2018-01-22T09:37:14.665Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:14 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:15.494Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:15.494Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:15 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:16.474Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5020 is not available. Trying another port...
+[debug] [2018-01-22T09:37:16.477Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:16 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:17.308Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:17.309Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:17 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:17.866Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5024 is not available. Trying another port...
+[debug] [2018-01-22T09:37:17.870Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:17 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:18.672Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:18.672Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:18 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:19.161Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5028 is not available. Trying another port...
+[debug] [2018-01-22T09:37:19.165Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:19 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:20.019Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:20.019Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:20 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:20.551Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5032 is not available. Trying another port...
+[debug] [2018-01-22T09:37:20.553Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:20 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:21.423Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:21.424Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:21 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:21.959Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5036 is not available. Trying another port...
+[debug] [2018-01-22T09:37:21.963Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/nysl-shmulik  
+  
+ Mon Jan 22 2018 10:37:21 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:23.178Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-22T09:37:23.179Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/975538522083/clients/_:getWebAppConfig  
+  
+ Mon Jan 22 2018 10:37:23 GMT+0100 (CET)
+[debug] [2018-01-22T09:37:23.663Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5040
+

@@ -4,17 +4,17 @@ function DataHandler(){ //create the single source of truth
     var teams;
 
     // Navigation
-    $('nav ul .openPage, #continue').on('click', function(){
-        $("section").hide( "slide", { direction: "down"  }, 1000 );
+    $('#lowerNav ul .openPage, #continue').on('click', function(){
+        $("section").hide( "blind", {direction: "horizontal"}, 700 );
         var name = $(this).data('name');
-        $("#"+name).show( "fold", {horizFirst: true}, 1000 );
+        $("#"+name).show( "fold", {horizFirst: true}, 700 );
         $('.active').removeClass('active');
         $(this).addClass('active');
 
     });
 
     $('#continue').on('click', function(){
-        $('nav').fadeIn(800);
+        $('#lowerNav, #upperNav').fadeIn(1000);
         $("[data-name='homepage']").addClass('active');
      })
 
@@ -22,6 +22,12 @@ function DataHandler(){ //create the single source of truth
             that.teams = response;
             that.createTable();   
         })
+    
+    $('.navbar-toggler').on('click', function(event) {
+    event.preventDefault();
+    $(this).closest('.navbar-minimal').toggleClass('open');
+    
+    })    
 
 this.createTable = function() {
     var rowArray = [];
