@@ -111,7 +111,7 @@ footer {
 .fa-copyright {
   color: white; }
 
-#homepage, #events, #upperNav, #lowerNav, #contact {
+#homepage, #events, #upperNav, #lowerNav, #contact, #rules, #messege {
   display: none; }
 
 section {
@@ -304,5 +304,22 @@ section {
   border-color: white;
   align-items: center; }
 
-div.col-xs-12 {
-  align-items: center; }
+.fields {
+  list-style: lower-alpha; }
+
+.rulesHeaders {
+  margin: 1em 0 1em 0;
+  text-decoration: underline; }
+
+#sportsmanship {
+  margin-top: 2em; }
+
+.fa-file-alt, .fa-info, .fa-comment-alt {
+  margin-right: 1em; }
+
+#contact_p {
+  font-size: 1.3em; }
+
+#email {
+  text-decoration: underline;
+  color: blue; }

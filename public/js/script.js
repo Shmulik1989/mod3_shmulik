@@ -4,11 +4,12 @@ function DataHandler(){ //create the single source of truth
     var teams;
 
     // Navigation
-    $('#lowerNav ul .openPage, #continue').on('click', function(){
+    $('#lowerNav ul li, #continue, #upperNav ul li').on('click', function(){
         $("section").hide( "blind", {direction: "horizontal"}, 700 );
         var name = $(this).data('name');
         $("#"+name).show( "fold", {horizFirst: true}, 700 );
         $('.active').removeClass('active');
+        $('#upperNav').removeClass('open'); 
         $(this).addClass('active');
 
     });
