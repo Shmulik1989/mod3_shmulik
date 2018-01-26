@@ -8,12 +8,19 @@ function DataHandler(){ //create the single source of truth
         $("section").hide( "blind", {direction: "horizontal"}, 700 );
         var name = $(this).data('name');
         $("#"+name).show( "fold", {horizFirst: true}, 700 );
-        $('#upperNav').removeClass('open'); 
+        $('#upperNav').removeClass('open');
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+
         
     });
 
     $('#continue').on('click', function(){
         $('#lowerNav, #upperNav').fadeIn(1000);
+        $('.active').removeClass('active');
+        $('[data-name="homepage"]').addClass('active');
+        
+
     });
 
     $.getJSON("data/teams_info.json", function(response){
@@ -41,11 +48,8 @@ this.createTable = function() {
         rowArray.push(row);
     });
     $('#leagueTable').append(rowArray);
-};
-    
-}
+
+}};
+
 //initialize DataHandler
 var dataHandler = new DataHandler();
-
-
-

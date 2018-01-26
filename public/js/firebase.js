@@ -1,4 +1,4 @@
-(function(){
+(function() {
      // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBKlKwAPXzbz0TOCEYo9CSkkdOXhMHtBwg",
@@ -69,9 +69,9 @@
         
         $("section").hide( "blind", {direction: "horizontal"}, 700 );
         $("#homepage").show( "fold", {horizFirst: true}, 700 );
+        $('#lowerNav, #upperNav').fadeIn(1000);
         $('.active').removeClass('active');
         $('[data-name="homepage"]').addClass('active');
-        $('#lowerNav, #upperNav').fadeIn(1000);
         $('#logout').show();
         $('#loginPage').hide();
 
