@@ -4,20 +4,17 @@ function DataHandler(){ //create the single source of truth
     var teams;
 
     // Navigation
-    $('#lowerNav ul li, #continue, #upperNav ul li').on('click', function(){
+    $('#lowerNav ul li, #upperNav ul li, #continue').on('click', function(){
         $("section").hide( "blind", {direction: "horizontal"}, 700 );
         var name = $(this).data('name');
         $("#"+name).show( "fold", {horizFirst: true}, 700 );
-        $('.active').removeClass('active');
         $('#upperNav').removeClass('open'); 
-        $(this).addClass('active');
-
+        
     });
 
     $('#continue').on('click', function(){
         $('#lowerNav, #upperNav').fadeIn(1000);
-        $("[data-name='homepage']").addClass('active');
-     })
+    });
 
     $.getJSON("data/teams_info.json", function(response){
             that.teams = response;
@@ -28,8 +25,8 @@ function DataHandler(){ //create the single source of truth
     event.preventDefault();
     $(this).closest('.navbar-minimal').toggleClass('open');
     
-    })    
-
+    })
+    
 this.createTable = function() {
     var rowArray = [];
     $.each(this.teams.teams, function(i, e) {
@@ -46,8 +43,9 @@ this.createTable = function() {
     $('#leagueTable').append(rowArray);
 };
     
-
 }
 //initialize DataHandler
 var dataHandler = new DataHandler();
+
+
 

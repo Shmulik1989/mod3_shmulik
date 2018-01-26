@@ -14,38 +14,37 @@
     <link rel="icon" type="image/png" href="images/nysl_logo.png">
     <link rel="manifest" type="/manifest.json" href="/manifest.json">
     <title>NYSL</title>
-    <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
-    <!--include only the Firebase features as you need  -->
-    <script defer src="/__/firebase/4.8.1/firebase-/auth.js"></script>
-    <script defer src="/__/firebase/4.8.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.8.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/init.js"></script>
-    <script defer src="/__/firebase/init.js"></script>
+
 </head>
 
 <body>
     <section id="landingPage">
-        <div class="container">
+        <div class="container-fluid">
+            <form id="loginForm">
             <div class="row">
                 <div class="col-xs-offset-5 col-xs-3">
                     <div class="form-login">
                         <h4 id="welcome">Welcome to NYSL</h4>
-                        <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                        <input type="email" id="email" class="form-control input-sm chat-input" placeholder="Your e-mail Address" required input>
                         <br>
-                        <input type="text" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                        <input id="userPassword" class="form-control input-sm chat-input" type="password" name="password" placeholder="Your Password" required pattern=".{5,10}" title="Password must be between 5 to 10 characters"/>
                         <br>
                         <div class="wrapper">
                             <span class="group-btn">     
-                                <a href="#" id="login" class="btn btn-primary btn-md">Login <i class="fa fa-sign-in"></i></a>
+                                <a data-name="homepage" id="login" class="btn btn-primary btn-md">Log in<span class="fas fa-sign-in-alt"></span></a>
                             </span>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
-            <div id="register">Not a member? Sign-up Here!</div>
-            <div id="continue" data-name="homepage">Continue Without Log in</div>
+            <span class="group-btn">
+                <a id="signup" class="btn btn-primary btn-md">Sign-Up<span class="fas fa-user-plus"></span></a>
+            </span>
+            <span class="group-btn">     
+                <a data-name="homepage" id="continue" class="btn btn-primary btn-md">Continue without Login</a>
+            </span>
             <img id="landingLogo" src="../images/nysl_logo.png" alt="NYSL Logo">
+            </form>
         </div>
     </section>
     <section id="homepage">
@@ -178,7 +177,7 @@
                     </form>
                 </div>
             </div>
-            <p id="contact_p">*You can also contact us directly through the following e-Mail: <a id="email" href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a><br>
+            <p id="contact_p">*You can also contact us directly through the following e-Mail: <a id="contactEmail" href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a><br>
                 we will reply to your email as soon as we can.</p>
         </div>
     </section>
@@ -311,11 +310,28 @@
                     <span class="fas fa-info"></span><span class="desc animate">Teams Information</span> 
                 </a>
             </li>
+            <li data-name="landingPage" id="logout">
+                <a class="animate">
+                    <span class="fas fa-sign-out-alt"></span><span class="desc animate">Log Out</span> 
+                </a>
+            </li>
+            <li data-name="landingPage" id="loginPage">
+                    <a class="animate">
+                        <span class="fas fa-user"></span><span class="desc animate">Login/Register</span> 
+                    </a>
+                </li>
         </ul>
     </nav>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 </body>
 
