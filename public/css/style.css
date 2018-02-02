@@ -1,3 +1,6 @@
+body #message {
+  padding-bottom: 5em; }
+
 body {
   height: 100vh;
   color: white;
@@ -100,7 +103,7 @@ a.locations span.fas {
 .fa-copyright {
   color: white; }
 
-#homepage, #events, #upperNav, #lowerNav, #contact, #rules, #messege {
+#homepage, #events, #upperNav, #lowerNav, #contact, #rules, #message {
   display: none; }
 
 .form-login {
@@ -325,22 +328,38 @@ a.locations span.fas {
   margin-top: 5em; }
 
 .msg {
-  max-width: 100%;
-  margin: 1em 0 1em;
-  padding: 10px;
-  width: 400px;
+  margin-top: 2em;
+  padding: 1em;
+  width: 100%;
+  height: auto;
   background-color: #28a745;
-  border-radius: 1em;
-  opacity: 0.9; }
+  border-radius: 5px;
+  opacity: 0.7; }
 
-#username, #text {
-  margin: 5px 0px;
-  border-radius: 2em; }
+#chatText {
+  bottom: 4em;
+  left: 0.5em;
+  width: 75%;
+  background: white !important;
+  border: none;
+  border-radius: 10px;
+  height: 3em;
+  outline: none;
+  padding-left: 0.4em;
+  position: fixed;
+  z-index: 100; }
 
 #post {
+  width: 20%;
   margin-top: 1em;
   border-radius: 1em;
   padding: 0.5em 1em;
-  background-color: #15461f;
+  background-color: #28a745;
   border: none;
-  color: #FFF; }
+  color: #FFF;
+  bottom: 4em;
+  right: 0.3em;
+  height: 3em;
+  border-radius: 0.5em;
+  position: fixed;
+  z-index: 100; }
