@@ -47,10 +47,8 @@ h1 {
   color: #28a745;
   text-decoration: none; }
 
-h3 {
-  color: white; }
-
 .title {
+  font-size: 2em;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
 
@@ -76,10 +74,6 @@ p {
 .teamsLogo {
   width: 1.4em; }
 
-.arrow {
-  width: 1.2em;
-  margin-left: 1em; }
-
 div p a:hover {
   text-decoration: none;
   color: grey; }
@@ -103,19 +97,11 @@ a.locations span.fas {
   position: absolute;
   right: 0; }
 
-footer {
-  border: 0.1em white solid;
-  padding: 1em 1em 1em 1em;
-  margin-top: 2em; }
-
 .fa-copyright {
   color: white; }
 
 #homepage, #events, #upperNav, #lowerNav, #contact, #rules, #messege {
   display: none; }
-
-section {
-  height: 100vh; }
 
 .form-login {
   width: 40vh;
@@ -149,6 +135,7 @@ section {
   margin-left: 0.3em; }
 
 #continue {
+  border-radius: 0.5em;
   margin-left: 4em;
   margin-bottom: 0.5em;
   margin-top: 1em; }
@@ -168,7 +155,7 @@ section {
   position: fixed;
   top: 0px;
   left: 0px;
-  border-radius: 0px; }
+  border-radius: 0.5em; }
 
 .navbar-minimal {
   width: 60px;
@@ -251,7 +238,7 @@ section {
   float: right; }
 
 .navbar-minimal.open {
-  width: 320px; }
+  width: 100%; }
 
 .navbar-minimal.open > .navbar-toggler > span {
   background-position: 0 -16px;
@@ -306,24 +293,25 @@ section {
   margin-top: 3em; }
 
 .btn-warning {
-  background-color: green;
-  border-color: white;
+  color: white;
+  background-color: #28a745;
+  border-color: #2b6731;
   align-items: center; }
 
-.fields {
+.listStyle {
   list-style: lower-alpha; }
 
 .rulesHeaders {
   margin: 1em 0 1em 0;
   text-decoration: underline; }
 
-#sportsmanship {
+#sportsmanshipHeader {
   margin-top: 2em; }
 
 .fa-file-alt, .fa-info, .fa-comment-alt, .fa-user-circle, .fa-sign-out-alt, .fa-user {
   margin-right: 1em; }
 
-#contact_p {
+#contactDetails {
   font-size: 1.3em; }
 
 #contactEmail {
@@ -332,3 +320,27 @@ section {
 
 #logout.hide, #login.hide {
   display: none; }
+
+#chat {
+  margin-top: 5em; }
+
+.msg {
+  max-width: 100%;
+  margin: 1em 0 1em;
+  padding: 10px;
+  width: 400px;
+  background-color: #28a745;
+  border-radius: 1em;
+  opacity: 0.9; }
+
+#username, #text {
+  margin: 5px 0px;
+  border-radius: 2em; }
+
+#post {
+  margin-top: 1em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background-color: #15461f;
+  border: none;
+  color: #FFF; }

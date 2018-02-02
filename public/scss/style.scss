@@ -1,5 +1,3 @@
-
-
 body {
     height:100vh; 
     color:white;
@@ -13,6 +11,7 @@ h1 {
 font-size: 2em;
 color: white;
 text-align: center;
+
 }
 
 #lowerNav ul{
@@ -54,13 +53,11 @@ text-align: center;
 
 #lowerNav ul li.active  {
     color: #28a745;
-    text-decoration: none; }
-
-h3 {
-    color:white;
+    text-decoration: none; 
 }
 
 .title {
+    font-size: 2em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -90,22 +87,13 @@ p {
     color: black;
 }
 
-
-
 .teamsLogo{
     width: 1.4em; 
 }
 
-.arrow {
-    width: 1.2em;
-    margin-left: 1em;
-}
-
-
 div p a:hover {
     text-decoration: none;
     color: grey;
-
 }
 
 div p a{
@@ -131,23 +119,12 @@ a.locations span.fas{
     right: 0;
 }
 
-footer {
-    border: 0.1em white solid;
-    padding: 1em 1em 1em 1em;
-    margin-top: 2em;
-}
-
 .fa-copyright {
     color: white;
 }
 
 #homepage,#events,#upperNav,#lowerNav,#contact,#rules,#messege {
     display: none;
-}
-
-
-section {
-    height: 100vh;
 }
 
 .form-login {
@@ -188,6 +165,7 @@ section {
 }
 
 #continue {
+    border-radius: 0.5em;
     margin-left: 4em;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -210,7 +188,7 @@ section {
     position: fixed;
     top: 0px;
     left: 0px;
-    border-radius: 0px;
+    border-radius:0.5em;
 }
 
 .navbar-minimal {
@@ -257,6 +235,7 @@ section {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+
 }
 
 .navbar-minimal > .navbar-menu {
@@ -270,12 +249,14 @@ section {
     background-color: rgb(51, 51, 51);
     background-color: rgba(51, 51, 51, 0.8);
 }
+
 .navbar-minimal > .navbar-menu > li {
     margin: 0px;
     padding: 0px;
     border-width: 0px;
     height: 54px;
 }
+
 .navbar-minimal > .navbar-menu > li > a {
     position: relative;
     display: inline-block;
@@ -300,7 +281,7 @@ section {
 }
 
 .navbar-minimal.open {
-    width: 320px;
+    width: 100%;
 }
 
 .navbar-minimal.open > .navbar-toggler > span {
@@ -365,13 +346,13 @@ section {
 }
 
 .btn-warning {
-    background-color :green;
-    border-color: white;
+    color: white;
+    background-color :#28a745;
+    border-color: #2b6731;
     align-items: center;
-
 }
 
-.fields {
+.listStyle {
     list-style: lower-alpha;
 }
 
@@ -380,7 +361,7 @@ section {
     text-decoration: underline;
 }
 
-#sportsmanship {
+#sportsmanshipHeader {
     margin-top: 2em;    
 }
 
@@ -388,7 +369,7 @@ section {
     margin-right: 1em;
 }
 
-#contact_p {
+#contactDetails {
     font-size: 1.3em;
 }
 
@@ -400,3 +381,31 @@ section {
 #logout.hide, #login.hide {
     display: none;
 }
+
+#chat {
+    margin-top: 5em;
+}
+
+.msg {
+    max-width: 100%;
+    margin: 1em 0 1em;
+    padding: 10px;
+    width: 400px;
+    background-color: #28a745;
+    border-radius: 1em;
+    opacity: 0.9;
+  }
+  #username, #text {
+    margin: 5px 0px;
+    border-radius: 2em;
+  }
+  #post {
+    margin-top: 1em;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    background-color: #15461f;
+    border: none;
+    color: #FFF;
+  }
+
+  
